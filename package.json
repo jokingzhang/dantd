@@ -1,12 +1,16 @@
 {
-  "name": "dantd",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "joking_zhang <496691544@qq.com> (jokingzhang.com)",
-  "license": "MIT"
+    "name": "dantd",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jokingzhang/dantd"
+    },
+    "keywords": [],
+    "author": "joking_zhang <496691544@qq.com> (jokingzhang.com)",
+    "license": "MIT"
 }
