@@ -1,5 +1,6 @@
 import typescript from 'rollup-plugin-typescript2'
 import commonjs from 'rollup-plugin-commonjs'
+import babel from 'rollup-plugin-babel'
 import external from 'rollup-plugin-peer-deps-external'
 // import postcss from 'rollup-plugin-postcss-modules'
 import postcss from 'rollup-plugin-postcss'
@@ -31,11 +32,30 @@ export default {
         }),
         url(),
         svgr(),
-        resolve(),
         typescript({
             rollupCommonJSResolveHack: true,
             clean: true
         }),
-        commonjs()
+        babel({
+            exclude: 'node_modules/**'
+        }),
+        resolve(),
+        commonjs({
+            include: 'node_modules/**',
+            namedExports: {
+                'node_modules/react/index.js': [
+                    'cloneElement',
+                    'createContext',
+                    'Component',
+                    'createElement'
+                ],
+                'node_modules/react-dom/index.js': ['render', 'hydrate'],
+                'node_modules/react-is/index.js': [
+                    'isElement',
+                    'isValidElementType',
+                    'ForwardRef'
+                ]
+            }
+        })
     ]
 }
