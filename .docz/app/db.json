@@ -1,0 +1,196 @@
+{
+  "config": {
+    "title": "Dantd",
+    "description": "react components by antdv3",
+    "menu": [
+      "首页",
+      "更新日志",
+      {
+        "name": "组件",
+        "menu": [
+          "LinkBtn"
+        ]
+      }
+    ],
+    "version": "1.0.4",
+    "repository": false,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-",
+    "typescript": true,
+    "theme": "/Users/didi/dev/demos/dantd/node_modules/docz-theme-umi/es/index.js",
+    "base": "/dantd/",
+    "htmlContext": {
+      "head": {
+        "links": [
+          {
+            "rel": "stylesheet",
+            "href": "/public/common.css"
+          }
+        ],
+        "scripts": [
+          {
+            "src": "https://gw.alipayobjects.com/os/lib/react/16.8.6/umd/react.development.js"
+          },
+          {
+            "src": "https://gw.alipayobjects.com/os/lib/react-dom/16.8.6/umd/react-dom.development.js"
+          }
+        ]
+      }
+    },
+    "plugins": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "entries": [
+    {
+      "key": "document/changeLog.mdx",
+      "value": {
+        "name": "更新日志",
+        "route": "/dantd/changelog",
+        "id": "47d27f9af7ca521a158166a75d120f6d",
+        "filepath": "document/changeLog.mdx",
+        "link": "https://github.com/jokingzhang/dantd/edit/master/document/changeLog.mdx",
+        "slug": "document-change-log",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "更新日志",
+            "depth": 3,
+            "value": "更新日志"
+          },
+          {
+            "slug": "发布周期",
+            "depth": 3,
+            "value": "发布周期"
+          },
+          {
+            "slug": "104",
+            "depth": 4,
+            "value": "1.0.4"
+          }
+        ]
+      }
+    },
+    {
+      "key": "document/home.mdx",
+      "value": {
+        "name": "简介",
+        "route": "/dantd/",
+        "id": "4ea28c33214a64c6674933f9093abf7b",
+        "filepath": "document/home.mdx",
+        "link": "https://github.com/jokingzhang/dantd/edit/master/document/home.mdx",
+        "slug": "document-home",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "简介",
+            "depth": 3,
+            "value": "简介"
+          },
+          {
+            "slug": "依赖",
+            "depth": 3,
+            "value": "依赖"
+          },
+          {
+            "slug": "安装",
+            "depth": 3,
+            "value": "安装"
+          },
+          {
+            "slug": "使用组件",
+            "depth": 3,
+            "value": "使用组件"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/Descriptions/index.mdx",
+      "value": {
+        "name": "Descriptions",
+        "route": "/dantd/descriptions",
+        "menu": "组件",
+        "id": "54fe06585ae02202732a85c26bd15d04",
+        "filepath": "src/Descriptions/index.mdx",
+        "link": "https://github.com/jokingzhang/dantd/edit/master/src/Descriptions/index.mdx",
+        "slug": "src-descriptions-index",
+        "headings": [
+          {
+            "slug": "descriptions",
+            "depth": 2,
+            "value": "Descriptions"
+          },
+          {
+            "slug": "代码演示",
+            "depth": 3,
+            "value": "代码演示"
+          },
+          {
+            "slug": "api",
+            "depth": 2,
+            "value": "API"
+          },
+          {
+            "slug": "descriptions-1",
+            "depth": 3,
+            "value": "Descriptions"
+          },
+          {
+            "slug": "descriptionsitem",
+            "depth": 3,
+            "value": "Descriptions.Item"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "src/Descriptions/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Descriptions",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "parent": {
+                "fileName": "src/Descriptions/index.tsx",
+                "name": "IDescriptionsProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "dataSource": {
+              "defaultValue": null,
+              "description": "",
+              "name": "dataSource",
+              "parent": {
+                "fileName": "src/Descriptions/index.tsx",
+                "name": "IDescriptionsProps"
+              },
+              "required": true,
+              "type": {
+                "name": "IDescriptionItem[]"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
