@@ -31,10 +31,10 @@
         ],
         "scripts": [
           {
-            "src": "https://gw.alipayobjects.com/os/lib/react/16.8.6/umd/react.development.js"
+            "src": "https://gw.alipayobjects.com/os/lib/react/16.8.6/umd/react.production.min.js"
           },
           {
-            "src": "https://gw.alipayobjects.com/os/lib/react-dom/16.8.6/umd/react-dom.development.js"
+            "src": "https://gw.alipayobjects.com/os/lib/react-dom/16.8.6/umd/react-dom.production.min.js"
           }
         ]
       }
@@ -49,6 +49,46 @@
       {}
     ]
   },
+  "props": [
+    {
+      "key": "src/Descriptions/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Descriptions",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "parent": {
+                "fileName": "src/Descriptions/index.tsx",
+                "name": "IDescriptionsProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "dataSource": {
+              "defaultValue": null,
+              "description": "",
+              "name": "dataSource",
+              "parent": {
+                "fileName": "src/Descriptions/index.tsx",
+                "name": "IDescriptionsProps"
+              },
+              "required": true,
+              "type": {
+                "name": "IDescriptionItem[]"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
   "entries": [
     {
       "key": "document/changeLog.mdx",
@@ -114,6 +154,40 @@
       }
     },
     {
+      "key": "src/Card/index.mdx",
+      "value": {
+        "name": "Card",
+        "route": "/dantd/card",
+        "menu": "组件",
+        "id": "997f25461726636ffe1f063a4c0400b8",
+        "filepath": "src/Card/index.mdx",
+        "link": "https://github.com/jokingzhang/dantd/edit/master/src/Card/index.mdx",
+        "slug": "src-card-index",
+        "headings": [
+          {
+            "slug": "card",
+            "depth": 2,
+            "value": "Card"
+          },
+          {
+            "slug": "代码演示",
+            "depth": 3,
+            "value": "代码演示"
+          },
+          {
+            "slug": "复制信息",
+            "depth": 4,
+            "value": "复制信息"
+          },
+          {
+            "slug": "api",
+            "depth": 2,
+            "value": "API"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/Descriptions/index.mdx",
       "value": {
         "name": "Descriptions",
@@ -151,46 +225,6 @@
           }
         ]
       }
-    }
-  ],
-  "props": [
-    {
-      "key": "src/Descriptions/index.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Descriptions",
-          "methods": [],
-          "props": {
-            "title": {
-              "defaultValue": null,
-              "description": "",
-              "name": "title",
-              "parent": {
-                "fileName": "src/Descriptions/index.tsx",
-                "name": "IDescriptionsProps"
-              },
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "dataSource": {
-              "defaultValue": null,
-              "description": "",
-              "name": "dataSource",
-              "parent": {
-                "fileName": "src/Descriptions/index.tsx",
-                "name": "IDescriptionsProps"
-              },
-              "required": true,
-              "type": {
-                "name": "IDescriptionItem[]"
-              }
-            }
-          }
-        }
-      ]
     }
   ]
 }

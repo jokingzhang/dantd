@@ -14,6 +14,7 @@ export default
     //     react: 'React',
     //   },
     // },
+    entry: 'src/index.tsx',
     doc: {
       // repository: false,
       themeConfig: {

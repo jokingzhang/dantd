@@ -20,7 +20,7 @@ const Descriptions: React.FC<IDescriptionsProps> = props => {
     return null;
   }
   return (
-    <div className="c-desc">
+    <div className="d-desc">
       {props.title && <div className="title">{props.title}</div>}
       {props.dataSource.map(dataItem => {
         return (
