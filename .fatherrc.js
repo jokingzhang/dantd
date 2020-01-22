@@ -4,16 +4,16 @@ export default
     extractCSS: true,
     esm: 'babel',
     cjs: 'babel',
-    umd: false,
+    umd: {
+      name: 'dantd',
+      sourcemap: true,
+      globals: {
+        react: 'React',
+      },
+    },
     extraBabelPlugins: [
       ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
     ],
-    // umd: {
-    //   name: 'td',
-    //   globals: {
-    //     react: 'React',
-    //   },
-    // },
     entry: 'src/index.tsx',
     doc: {
       // repository: false,
@@ -33,12 +33,7 @@ export default
       menu: [
         '首页',
         '更新日志',
-        {
-          name: '组件',
-          menu: [
-            'LinkBtn',
-          ]
-        }
+        '组件'
       ]
     },
 }
