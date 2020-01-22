@@ -1,20 +1,5 @@
-"use strict";
-
-import React from "react";
-
-var __importDefault = this && this.__importDefault || function (mod) {
-  return mod && mod.__esModule ? mod : {
-    "default": mod
-  };
-};
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var react_1 = __importDefault(require("react"));
-
-require("./style/index.css");
+import React from 'react';
+import "./style/index.css";
 
 var Descriptions = function Descriptions(props) {
   function renderEmpty(content) {
@@ -31,7 +16,7 @@ var Descriptions = function Descriptions(props) {
     className: "title"
   }, props.title), props.dataSource.map(function (dataItem) {
     return React.createElement("div", {
-      key: "desc-" + dataItem.title,
+      key: "desc-".concat(dataItem.title),
       className: "item"
     }, React.createElement("div", {
       className: "item-title"
@@ -41,4 +26,4 @@ var Descriptions = function Descriptions(props) {
   }));
 };
 
-exports.default = Descriptions;
+export default Descriptions;

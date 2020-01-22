@@ -7,12 +7,12 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "document-home" */ 'document/home.mdx'
     ),
-  'src/Card/index.mdx': () =>
+  'src/card/index.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-card-index" */ 'src/Card/index.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-card-index" */ 'src/card/index.mdx'
     ),
-  'src/Descriptions/index.mdx': () =>
+  'src/descriptions/index.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-descriptions-index" */ 'src/Descriptions/index.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-descriptions-index" */ 'src/descriptions/index.mdx'
     ),
 }

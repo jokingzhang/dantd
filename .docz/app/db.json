@@ -5,14 +5,9 @@
     "menu": [
       "首页",
       "更新日志",
-      {
-        "name": "组件",
-        "menu": [
-          "LinkBtn"
-        ]
-      }
+      "组件"
     ],
-    "version": "1.0.4",
+    "version": "1.0.8",
     "repository": false,
     "native": false,
     "codeSandbox": true,
@@ -154,14 +149,14 @@
       }
     },
     {
-      "key": "src/Card/index.mdx",
+      "key": "src/card/index.mdx",
       "value": {
         "name": "Card",
         "route": "/dantd/card",
         "menu": "组件",
-        "id": "997f25461726636ffe1f063a4c0400b8",
-        "filepath": "src/Card/index.mdx",
-        "link": "https://github.com/jokingzhang/dantd/edit/master/src/Card/index.mdx",
+        "id": "518a76de3c86027a079decdb4d35613a",
+        "filepath": "src/card/index.mdx",
+        "link": "https://github.com/jokingzhang/dantd/edit/master/src/card/index.mdx",
         "slug": "src-card-index",
         "headings": [
           {
@@ -188,14 +183,14 @@
       }
     },
     {
-      "key": "src/Descriptions/index.mdx",
+      "key": "src/descriptions/index.mdx",
       "value": {
         "name": "Descriptions",
         "route": "/dantd/descriptions",
         "menu": "组件",
-        "id": "54fe06585ae02202732a85c26bd15d04",
-        "filepath": "src/Descriptions/index.mdx",
-        "link": "https://github.com/jokingzhang/dantd/edit/master/src/Descriptions/index.mdx",
+        "id": "b08902d871809d8ee1a440cade9bf914",
+        "filepath": "src/descriptions/index.mdx",
+        "link": "https://github.com/jokingzhang/dantd/edit/master/src/descriptions/index.mdx",
         "slug": "src-descriptions-index",
         "headings": [
           {

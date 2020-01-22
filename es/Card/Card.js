@@ -1,38 +1,18 @@
-"use strict";
-
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-import React from "react";
+import React from 'react'; // import classNames from 'classnames';
 
-var __importDefault = this && this.__importDefault || function (mod) {
-  return mod && mod.__esModule ? mod : {
-    "default": mod
-  };
-};
+import Card from 'antd/lib/card';
+import Typography from 'antd/lib/typography';
+import 'antd/lib/card/style';
+import 'antd/lib/typography/style';
+import "./style/index.css";
+var Paragraph = Typography.Paragraph;
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var react_1 = __importDefault(require("react")); // import classNames from 'classnames';
-
-
-var card_1 = __importDefault(require("antd/lib/card"));
-
-var typography_1 = __importDefault(require("antd/lib/typography"));
-
-require("antd/lib/card/style");
-
-require("antd/lib/typography/style");
-
-require("./style/index.css");
-
-var Paragraph = typography_1.default.Paragraph;
-
-var DCard = function DCard(_a) {
-  var antdProps = _a.antdProps,
-      copyText = _a.copyText,
-      children = _a.children;
+var DCard = function DCard(_ref) {
+  var antdProps = _ref.antdProps,
+      copyText = _ref.copyText,
+      children = _ref.children;
 
   function renderRightExtra() {
     if (copyText) {
@@ -49,9 +29,9 @@ var DCard = function DCard(_a) {
 
   return React.createElement("div", {
     className: "d-card"
-  }, React.createElement(card_1.default, _extends({
+  }, React.createElement(Card, _extends({
     extra: renderRightExtra()
   }, antdProps), children));
 };
 
-exports.default = DCard;
+export default DCard;
