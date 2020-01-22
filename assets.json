@@ -1,13 +1,13 @@
 {
-  "vendors.css": "/dantd/static/css/vendors.68968d4ed3d1481c3c52.css",
+  "vendors.css": "/dantd/static/css/vendors.35abfd25b545bdfc510b.css",
   "vendors.js": "/dantd/static/js/vendors.a36e6509.js",
-  "app.js": "/dantd/static/js/app.68968d4ed3d1481c3c52.js",
+  "app.js": "/dantd/static/js/app.35abfd25b545bdfc510b.js",
   "document-change-log.js": "/dantd/static/js/document-change-log.fde77de7.js",
-  "document-home.css": "/dantd/static/css/document-home.68968d4ed3d1481c3c52.css",
+  "document-home.css": "/dantd/static/css/document-home.35abfd25b545bdfc510b.css",
   "document-home.js": "/dantd/static/js/document-home.aef2a275.js",
-  "src-card-index.css": "/dantd/static/css/src-card-index.68968d4ed3d1481c3c52.css",
+  "src-card-index.css": "/dantd/static/css/src-card-index.35abfd25b545bdfc510b.css",
   "src-card-index.js": "/dantd/static/js/src-card-index.d999bd8c.js",
-  "src-descriptions-index.css": "/dantd/static/css/src-descriptions-index.68968d4ed3d1481c3c52.css",
-  "src-descriptions-index.js": "/dantd/static/js/src-descriptions-index.c8af5861.js",
+  "src-descriptions-index.css": "/dantd/static/css/src-descriptions-index.35abfd25b545bdfc510b.css",
+  "src-descriptions-index.js": "/dantd/static/js/src-descriptions-index.15af3f96.js",
   "index.html": "/dantd/index.html"
 }
