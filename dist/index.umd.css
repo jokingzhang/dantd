@@ -44,3 +44,6 @@
   line-height: 1.8;
 }
 
+.d-card {
+  position: relative;
+}

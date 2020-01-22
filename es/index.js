@@ -4,10 +4,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var Descriptions_1 = require("./Descriptions");
+var descriptions_1 = require("./descriptions");
 
-exports.Descriptions = Descriptions_1.default;
+exports.Descriptions = descriptions_1.default;
 
-var Card_1 = require("./Card");
+var card_1 = require("./card");
 
-exports.Card = Card_1.default;
+exports.Card = card_1.default;

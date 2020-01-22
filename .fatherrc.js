@@ -16,6 +16,7 @@ export default
       ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
     ],
     entry: 'src/index.tsx',
+    lessInBabelMode: true,
     doc: {
       // repository: false,
       themeConfig: {
