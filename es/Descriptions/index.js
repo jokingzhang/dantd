@@ -1,5 +1,20 @@
-import React from 'react';
-import './style.less';
+"use strict";
+
+import React from "react";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+require("./style.less");
 
 var Descriptions = function Descriptions(props) {
   function renderEmpty(content) {
@@ -26,4 +41,4 @@ var Descriptions = function Descriptions(props) {
   }));
 };
 
-export default Descriptions;
+exports.default = Descriptions;

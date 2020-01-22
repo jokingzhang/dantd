@@ -9,6 +9,7 @@ export default
       sourcemap: true,
       globals: {
         react: 'React',
+        antd: 'antd'
       },
     },
     extraBabelPlugins: [
