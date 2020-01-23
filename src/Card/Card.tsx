@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 // import classNames from 'classnames';
 import Card, { CardProps } from 'antd/lib/card';
 import Typography from 'antd/lib/typography';
@@ -14,16 +14,11 @@ export interface IDCardProps {
   children?: React.ReactNode;
 }
 
-const DCard: React.FC<IDCardProps> = ({
-  antdProps,
-  copyText,
-  children,
-}) => {
-
+const DCard: React.FC<IDCardProps> = ({ antdProps, copyText, children }) => {
   function renderRightExtra() {
     if (copyText) {
       return (
-        <Paragraph style={{marginBottom: 0}} copyable>
+        <Paragraph style={{ marginBottom: 0 }} copyable>
           {copyText}
         </Paragraph>
       );

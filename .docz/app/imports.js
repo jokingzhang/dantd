@@ -15,4 +15,8 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "src-descriptions-index" */ 'src/descriptions/index.mdx'
     ),
+  'src/empty-line/index.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "src-empty-line-index" */ 'src/empty-line/index.mdx'
+    ),
 }
