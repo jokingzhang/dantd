@@ -78,8 +78,20 @@
     }, antdProps), children));
   };
 
+  var EmptyLine = function EmptyLine(_ref) {
+    var _ref$height = _ref.height,
+        height = _ref$height === void 0 ? 20 : _ref$height;
+    return React.createElement("div", {
+      className: "d-empty-line",
+      style: {
+        height: height
+      }
+    });
+  };
+
   exports.Card = DCard;
   exports.Descriptions = Descriptions;
+  exports.EmptyLine = EmptyLine;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
