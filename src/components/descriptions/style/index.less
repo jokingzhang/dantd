@@ -1,0 +1,44 @@
+.d-desc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .title {
+    margin-bottom: 15px;
+    width: 200px;
+    text-align: right;
+    word-break: break-word;
+    font-weight: bold;
+  }
+
+  .item {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    .item-title {
+      position: relative;
+      flex: 0 1 auto;
+      width: 200px;
+      word-break: break-word;
+      text-align: right;
+      line-height: 1.8;
+
+      &:after {
+        content: ':';
+        position: absolute;
+        top: -0.5px;
+        margin: 0 8px 0 4px;
+      }
+    }
+
+    .item-content {
+      flex: 1;
+      width: auto;
+      margin-left: 16px;
+      word-break: break-word;
+      line-height: 1.8;
+    }
+  }
+}

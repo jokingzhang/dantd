@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
-    "paths": {
-      "antd": ["src/index.tsx"],
-      "antd/es/*": ["src/*"]
-    },
     "strictNullChecks": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -14,8 +10,26 @@
     "noUnusedLocals": false,
     "noImplicitAny": true,
     "target": "es6",
-    "lib": ["dom", "es2017"],
-    "skipLibCheck": true
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
-  "exclude": ["node_modules", "lib", "es"]
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es"
+  ],
+  "include": [
+    "src"
+  ]
 }

@@ -1,22 +1,22 @@
 export const imports = {
-  'document/changeLog.mdx': () =>
+  'src/components/card/index.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "document-change-log" */ 'document/changeLog.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-components-card-index" */ 'src/components/card/index.mdx'
     ),
-  'document/home.mdx': () =>
+  'src/components/descriptions/index.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "document-home" */ 'document/home.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-components-descriptions-index" */ 'src/components/descriptions/index.mdx'
     ),
-  'src/card/index.mdx': () =>
+  'src/components/docs/changeLog.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-card-index" */ 'src/card/index.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-components-docs-change-log" */ 'src/components/docs/changeLog.mdx'
     ),
-  'src/descriptions/index.mdx': () =>
+  'src/components/docs/home.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-descriptions-index" */ 'src/descriptions/index.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-components-docs-home" */ 'src/components/docs/home.mdx'
     ),
-  'src/empty-line/index.mdx': () =>
+  'src/components/empty-line/index.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-empty-line-index" */ 'src/empty-line/index.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-components-empty-line-index" */ 'src/components/empty-line/index.mdx'
     ),
 }
