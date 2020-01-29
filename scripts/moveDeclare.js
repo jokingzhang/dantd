@@ -1,5 +1,4 @@
 const path = require('path');
-const colors = require('colors');
 const klawSync = require('klaw-sync');
 const fs = require('fs'); 
 
@@ -14,4 +13,4 @@ declarePaths.forEach((pathItem) => {
     fs.copyFileSync(pathItem.path, libPath);
 })
 
-console.log('.d.ts 文件拷贝成功！'.green);
+console.log('.d.ts 文件拷贝成功！');

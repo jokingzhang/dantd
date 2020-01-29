@@ -7,7 +7,7 @@
       "更新日志",
       "组件"
     ],
-    "version": "1.0.9",
+    "version": "1.0.10",
     "repository": false,
     "native": false,
     "codeSandbox": true,
@@ -26,10 +26,10 @@
         ],
         "scripts": [
           {
-            "src": "https://gw.alipayobjects.com/os/lib/react/16.8.6/umd/react.production.min.js"
+            "src": "https://gw.alipayobjects.com/os/lib/react/16.8.6/umd/react.development.js"
           },
           {
-            "src": "https://gw.alipayobjects.com/os/lib/react-dom/16.8.6/umd/react-dom.production.min.js"
+            "src": "https://gw.alipayobjects.com/os/lib/react-dom/16.8.6/umd/react-dom.development.js"
           }
         ]
       }

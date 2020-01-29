@@ -1,5 +1,4 @@
 const path = require('path');
-const colors = require('colors');
 const klawSync = require('klaw-sync');
 const fs = require('fs'); 
 
@@ -28,4 +27,4 @@ allPaths.forEach((fileItem) => {
     fs.writeFileSync(fileItem, newFileContent, 'utf8');
 })
 
-console.log('.less => .css 文件后缀改写成功！'.green);
+console.log('.less => .css 文件后缀改写成功！');

@@ -1,8 +1,6 @@
 import React from 'react';
 import { CardProps } from 'antd/lib/card';
-import 'antd/lib/card/style';
-import 'antd/lib/typography/style';
-import './style/index.css';
+import './style/index.less';
 export interface IDCardProps {
     antdProps?: CardProps;
     copyText?: string;
