@@ -1,17 +1,17 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('antd/lib/card'), require('antd/lib/typography'), require('antd/lib/card/style'), require('antd/lib/typography/style')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'react', 'antd/lib/card', 'antd/lib/typography', 'antd/lib/card/style', 'antd/lib/typography/style'], factory) :
-  (global = global || self, factory(global.dantd = {}, global.React, global.Card, global.Typography));
-}(this, (function (exports, React, Card, Typography) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('antd/es/card/style'), require('antd/es/card'), require('antd/es/typography/style'), require('antd/es/typography')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'react', 'antd/es/card/style', 'antd/es/card', 'antd/es/typography/style', 'antd/es/typography'], factory) :
+  (global = global || self, factory(global.dantd = {}, global.React, null, global._Card, null, global._Typography));
+}(this, (function (exports, React, style, _Card, style$1, _Typography) { 'use strict';
 
   React = React && React.hasOwnProperty('default') ? React['default'] : React;
-  Card = Card && Card.hasOwnProperty('default') ? Card['default'] : Card;
-  Typography = Typography && Typography.hasOwnProperty('default') ? Typography['default'] : Typography;
+  _Card = _Card && _Card.hasOwnProperty('default') ? _Card['default'] : _Card;
+  _Typography = _Typography && _Typography.hasOwnProperty('default') ? _Typography['default'] : _Typography;
 
   var Descriptions = function Descriptions(props) {
     function renderEmpty(content) {
       if (!content || Array.isArray(content) && content.length === 0) {
-        return '暂无数据';
+        return '- -';
       }
 
       return null;
@@ -19,7 +19,7 @@
 
     return React.createElement("div", {
       className: "d-desc"
-    }, props.title && React.createElement("div", {
+    }, props.dataSource.length === 0 && '- -', props.title && React.createElement("div", {
       className: "title"
     }, props.title), props.dataSource.map(function (dataItem) {
       return React.createElement("div", {
@@ -51,7 +51,7 @@
     return _extends.apply(this, arguments);
   }
 
-  var Paragraph = Typography.Paragraph;
+  var Paragraph = _Typography.Paragraph;
 
   var DCard = function DCard(_ref) {
     var antdProps = _ref.antdProps,
@@ -73,7 +73,7 @@
 
     return React.createElement("div", {
       className: "d-card"
-    }, React.createElement(Card, _extends({
+    }, React.createElement(_Card, _extends({
       extra: renderRightExtra()
     }, antdProps), children));
   };

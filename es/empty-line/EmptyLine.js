@@ -1,5 +1,4 @@
 import React from 'react';
-import "./style/index.css";
 
 var EmptyLine = function EmptyLine(_ref) {
   var _ref$height = _ref.height,

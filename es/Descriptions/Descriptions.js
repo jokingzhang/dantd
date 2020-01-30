@@ -1,10 +1,9 @@
 import React from 'react';
-import "./style/index.css";
 
 var Descriptions = function Descriptions(props) {
   function renderEmpty(content) {
     if (!content || Array.isArray(content) && content.length === 0) {
-      return '暂无数据';
+      return '- -';
     }
 
     return null;
@@ -12,7 +11,7 @@ var Descriptions = function Descriptions(props) {
 
   return React.createElement("div", {
     className: "d-desc"
-  }, props.title && React.createElement("div", {
+  }, props.dataSource.length === 0 && '- -', props.title && React.createElement("div", {
     className: "title"
   }, props.title), props.dataSource.map(function (dataItem) {
     return React.createElement("div", {

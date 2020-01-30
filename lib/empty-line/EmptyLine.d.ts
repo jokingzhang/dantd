@@ -1,5 +1,4 @@
 /// <reference types="react" />
-import './style/index.css';
 export interface IEmptyLineProps {
     height?: number;
 }

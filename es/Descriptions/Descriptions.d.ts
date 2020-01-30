@@ -1,5 +1,4 @@
 import React from 'react';
-import './style/index.css';
 export interface IDescriptionItem {
     title: string;
     content: string | string[];
