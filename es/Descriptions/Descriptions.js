@@ -15,7 +15,7 @@ var Descriptions = function Descriptions(props) {
     className: "title"
   }, props.title), props.dataSource.map(function (dataItem) {
     return React.createElement("div", {
-      key: "desc-".concat(dataItem.title),
+      key: "desc-" + dataItem.title,
       className: "item"
     }, React.createElement("div", {
       className: "item-title"

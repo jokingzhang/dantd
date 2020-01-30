@@ -9,10 +9,10 @@ import React from 'react'; // import classNames from 'classnames';
 
 var Paragraph = _Typography.Paragraph;
 
-var DCard = function DCard(_ref) {
-  var antdProps = _ref.antdProps,
-      copyText = _ref.copyText,
-      children = _ref.children;
+var DCard = function DCard(_a) {
+  var antdProps = _a.antdProps,
+      copyText = _a.copyText,
+      children = _a.children;
 
   function renderRightExtra() {
     if (copyText) {

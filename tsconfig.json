@@ -1,21 +1,31 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "antd": ["src/index.tsx"],
-      "antd/es/*": ["src/*"]
-    },
-    "strictNullChecks": true,
-    "moduleResolution": "node",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "downlevelIteration": true,
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "jsx": "preserve",
-    "noUnusedParameters": true,
-    "noUnusedLocals": false,
-    "noImplicitAny": true,
-    "target": "es6",
-    "lib": ["dom", "es2017"],
-    "skipLibCheck": true
+    "sourceMap": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
   },
-  "exclude": ["node_modules", "lib", "es"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src",
+    "entry",
+  ]
 }
