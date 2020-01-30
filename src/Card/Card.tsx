@@ -1,10 +1,7 @@
 import React from 'react';
 // import classNames from 'classnames';
-import Card, { CardProps } from 'antd/lib/card';
-import Typography from 'antd/lib/typography';
-import 'antd/lib/card/style';
-import 'antd/lib/typography/style';
-import './style/index.less';
+import { Card, Typography } from 'antd';
+import { CardProps } from 'antd/lib/card';
 
 const { Paragraph } = Typography;
 

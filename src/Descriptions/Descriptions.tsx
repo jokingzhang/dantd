@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './style/index.less';
-
 export interface IDescriptionItem {
   title: string;
   content: string | string[];
@@ -15,12 +13,13 @@ export interface IDescriptionsProps {
 const Descriptions: React.FC<IDescriptionsProps> = props => {
   function renderEmpty(content: string | string[]) {
     if (!content || (Array.isArray(content) && content.length === 0)) {
-      return '暂无数据';
+      return '- -';
     }
     return null;
   }
   return (
     <div className="d-desc">
+      {props.dataSource.length === 0 && '- -'}
       {props.title && <div className="title">{props.title}</div>}
       {props.dataSource.map(dataItem => {
         return (

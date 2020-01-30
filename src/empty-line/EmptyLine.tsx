@@ -1,5 +1,4 @@
 import React from 'react';
-import './style/index.less';
 
 export interface IEmptyLineProps {
   height?: number;
