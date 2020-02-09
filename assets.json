@@ -1,14 +1,14 @@
 {
-  "vendors.css": "/dantd/static/css/vendors.ea3d349e90d8e0b5cacf.css",
+  "vendors.css": "/dantd/static/css/vendors.430796f5ce9f4eff2670.css",
   "vendors.js": "/dantd/static/js/vendors.4a015537.js",
-  "app.js": "/dantd/static/js/app.ea3d349e90d8e0b5cacf.js",
+  "app.js": "/dantd/static/js/app.430796f5ce9f4eff2670.js",
   "document-change-log.js": "/dantd/static/js/document-change-log.9afb3bfb.js",
-  "document-home.js": "/dantd/static/js/document-home.867ea1ee.js",
-  "src-card-index.css": "/dantd/static/css/src-card-index.ea3d349e90d8e0b5cacf.css",
-  "src-card-index.js": "/dantd/static/js/src-card-index.ef269f61.js",
-  "src-descriptions-index.css": "/dantd/static/css/src-descriptions-index.ea3d349e90d8e0b5cacf.css",
-  "src-descriptions-index.js": "/dantd/static/js/src-descriptions-index.fdb5c08d.js",
-  "src-empty-line-index.css": "/dantd/static/css/src-empty-line-index.ea3d349e90d8e0b5cacf.css",
-  "src-empty-line-index.js": "/dantd/static/js/src-empty-line-index.b22c8f0d.js",
+  "document-home.js": "/dantd/static/js/document-home.46ccd229.js",
+  "src-components-card-index.css": "/dantd/static/css/src-components-card-index.430796f5ce9f4eff2670.css",
+  "src-components-card-index.js": "/dantd/static/js/src-components-card-index.a77109ba.js",
+  "src-components-descriptions-index.css": "/dantd/static/css/src-components-descriptions-index.430796f5ce9f4eff2670.css",
+  "src-components-descriptions-index.js": "/dantd/static/js/src-components-descriptions-index.e3044b18.js",
+  "src-components-empty-line-index.css": "/dantd/static/css/src-components-empty-line-index.430796f5ce9f4eff2670.css",
+  "src-components-empty-line-index.js": "/dantd/static/js/src-components-empty-line-index.1ac60b79.js",
   "index.html": "/dantd/index.html"
 }
