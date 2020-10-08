@@ -30,7 +30,7 @@ const columns = [
       descend: 'desc',
     },
     key: 'age',
-    render: text => <span data-testid="column-age">{text}</span>,
+    render: (text) => <span data-testid="column-age">{text}</span>,
   },
   {
     title: 'Address',
@@ -44,9 +44,9 @@ const columns = [
     title: 'Tags',
     key: 'tags',
     dataIndex: 'tags',
-    render: tags => (
+    render: (tags) => (
       <span>
-        {tags.map(tag => {
+        {tags.map((tag) => {
           let color = tag.length > 5 ? 'geekblue' : 'green';
           if (tag === 'loser') {
             color = 'volcano';
@@ -182,13 +182,13 @@ const mockDatas = [
   },
 ];
 
-const renderTable = renderProps => {
+const renderTable = (renderProps) => {
   return (
     <FetchMock mocks={mockDatas}>
       <DataTable
         url={renderProps.url}
         columns={columns}
-        apiCallback={data => {
+        apiCallback={(data) => {
           // data
           // total
           return {

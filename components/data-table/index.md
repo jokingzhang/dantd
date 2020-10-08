@@ -39,7 +39,7 @@ subtitle: 数据表格
 | onSearch | 模糊搜索之后，会触发这个回调，该回调不会覆盖组件的过滤 | function(query) {} | true |
 | searchPos | 模糊搜索框的位置 | `'full'` \| `'right'` | `'full'` |
 | pageParams | 配置后端分页相关字段 | IPageParamsProps | - |
-| queryFormColumns | 查询表单的配置描述，详见 `QueryForm` 组件的文档 | [QueryColumnProps](http://dantd.intra.xiaojukeji.com/components/query-form/#Columns)[] | - |
+| queryFormColumns | 查询表单的配置描述，详见 `QueryForm` 组件的文档 | [QueryColumnProps](https://jokingzhang.github.io/dantd/components/query-form/#Columns)[] | - |
 | showQueryOptionBtns | 是否展示 `QueryForm` 的右下角的「查询」「重置」按钮，以及「展开」「收起」 | boolean | true |
 | showQueryCollapseButton | 是否展示 `QueryForm` 的「展开」「收起」 | boolean | true |
 | isQuerySearchOnChange | `QueryForm`表单值变化时，是否更新Table数据 | boolean | true |

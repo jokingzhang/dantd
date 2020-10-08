@@ -8,7 +8,7 @@ interface IContextProps {
 const locale = 'en-US';
 
 const IntlContext = createContext<IContextProps>({
-  t: key => TRANSLATIONS[locale][key],
+  t: (key) => TRANSLATIONS[locale][key],
 });
 
 export default IntlContext;

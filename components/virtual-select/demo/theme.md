@@ -6,7 +6,7 @@ title: 暗黑主题
 暗黑主题
 
 ```jsx
-import { VirtualSelect as Select } from '@didi/dantd';
+import { VirtualSelect as Select } from 'dantd';
 
 const { Option } = Select;
 

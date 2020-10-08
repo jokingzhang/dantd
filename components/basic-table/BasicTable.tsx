@@ -161,7 +161,7 @@ function BasicTable<T>(props: IBasicTableProps<T>) {
     return `${t('table.total.prefix')} ${total} ${t('table.total.suffix')}`;
   };
 
-  const columnsDataIndexArr = props.columns.map(columnItem => columnItem.dataIndex) || [];
+  const columnsDataIndexArr = props.columns.map((columnItem) => columnItem.dataIndex) || [];
   const dataSourceMap = useMemo(() => {
     if (!props.dataSource || !Array.isArray(props.dataSource)) {
       return [];
@@ -188,7 +188,7 @@ function BasicTable<T>(props: IBasicTableProps<T>) {
   const columnsMap = useMemo(() => {
     const result = {} as any;
     if (props.columns && props.columns.length > 0) {
-      props.columns.forEach(columnItem => {
+      props.columns.forEach((columnItem) => {
         if (columnItem.dataIndex) {
           result[columnItem.dataIndex as string] = {
             title: columnItem.title,
@@ -241,19 +241,16 @@ function BasicTable<T>(props: IBasicTableProps<T>) {
       } else {
         // 使用组件默认的search回调
 
-        const debouncedSearchArr = debouncedSearchQuery
-          .trim()
-          .toLowerCase()
-          .split(' ');
+        const debouncedSearchArr = debouncedSearchQuery.trim().toLowerCase().split(' ');
         newDataSource = newDataSource.filter((fiterItem, filterIdx) => {
           const filterStr = dataSourceMap[filterIdx];
-          return debouncedSearchArr.every(someItem => filterStr.indexOf(someItem) >= 0);
+          return debouncedSearchArr.every((someItem) => filterStr.indexOf(someItem) >= 0);
         });
       }
     }
 
     if (queryFormColumns && Object.keys(queryFormValues).length > 0) {
-      newDataSource = _.filter(newDataSource, sourceItem => {
+      newDataSource = _.filter(newDataSource, (sourceItem) => {
         return Object.entries(queryFormValues).every(([queryKey, queryValue]) => {
           if (!queryValue || (Array.isArray(queryValue) && queryValue.length === 0)) {
             return true;
@@ -425,7 +422,7 @@ function BasicTable<T>(props: IBasicTableProps<T>) {
     //   return props.columns;
     // }
 
-    return props.columns.map(columnItem => {
+    return props.columns.map((columnItem) => {
       const currentItem = _.cloneDeep(columnItem);
 
       // filter
@@ -504,12 +501,12 @@ function BasicTable<T>(props: IBasicTableProps<T>) {
               <Input
                 data-testid="filter-search-input"
                 autoFocus={true}
-                ref={node => {
+                ref={(node) => {
                   filterSearchInputRef.current = node;
                 }}
                 placeholder={t('table.filter.search.placeholder')}
                 value={selectedKeys && selectedKeys[0]}
-                onChange={e => {
+                onChange={(e) => {
                   if (setSelectedKeys) {
                     return setSelectedKeys(e.target.value ? [e.target.value] : []);
                   }
@@ -606,20 +603,20 @@ function BasicTable<T>(props: IBasicTableProps<T>) {
     }
   };
 
-  const handleSearchChange = e => {
+  const handleSearchChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
   };
 
-  const handleQueryFormChange = data => {
+  const handleQueryFormChange = (data) => {
     setQueryFormValues(data);
   };
 
-  const handleQueryFormReset = data => {
+  const handleQueryFormReset = (data) => {
     setQueryFormValues(data);
   };
 
-  const renderRightHeader = params => {
+  const renderRightHeader = (params) => {
     if (!showFilter) {
       return null;
     }
@@ -636,7 +633,7 @@ function BasicTable<T>(props: IBasicTableProps<T>) {
           </b>
         </div>
         {(isSearch || isFilter) &&
-          Object.values(columnsState as IColumnsReducerState).map(columnValue => {
+          Object.values(columnsState as IColumnsReducerState).map((columnValue) => {
             if (columnValue.type === 'search' && columnValue.value) {
               return (
                 <div

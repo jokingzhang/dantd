@@ -10,8 +10,8 @@ subtitle: 防抖
 
 ```jsx
 import { Table, Input, Icon, Row, Col, Button } from 'antd';
-import { useDebounce } from '@didi/dantd';
-const listUrl = 'http://10.160.122.33:8080/list';
+import { useDebounce } from 'dantd';
+const listUrl = 'https://easy-mock.com/mock/5f7e96fbf9d9bd19dca629b0/dantd/list';
 const columns = [
   {
     title: '标题',

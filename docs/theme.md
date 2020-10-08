@@ -47,9 +47,5 @@ addWebpackPlugin(new AntDesignThemePlugin(options))
 // antd variables
 @import '~antd/es/style/themes/default.less';
 // dantd variables
-@import '~@didi/dantd/es/style/themes.less';
+@import '~dantd/es/style/themes.less';
 ```
-
-更多代码的细节，请参考 [dantd-demo](http://git.xiaojukeji.com/ops-fe/dantd-demo)
-
-后续会增加一个主题的弹窗组件，敬请期待~

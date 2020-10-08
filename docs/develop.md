@@ -72,24 +72,16 @@ export default withIntl(Comp);
 - [Jest](https://jestjs.io/)：JavaScript 测试框架。
 - [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro)：将 React 组件转化成 Dom 节点来测试，而不是渲染的 React 组件的实例，可以当做是 [Enzyme](http://airbnb.io/enzyme/) 的替代。编写测试脚本，并保证希望测试到的地方已经覆盖。
 
-更多请参考：[使用 React Testing Library 和 Jest 完成单元测试](http://way.xiaojukeji.com/article/20679)
+更多请参考：[使用 React Testing Library 和 Jest 完成单元测试](https://juejin.im/post/6844904095682134029)
 
 ### 发布
 
-如果没有安装过 `dnpm`，需要先安装一下：
-
-```
-$ npm install -g dnpm --registry=http://registry.npm.xiaojukeji.com
-```
-
-登录 `dnpm` 账号，提交所有代码
-
 ```
 $ npm run build
-$ dnpm login
+$ npm login
 $ npm version patch
 $ git push
-$ dnpm publish
+$ npm publish
 ```
 
 # 文档
@@ -107,7 +99,3 @@ npm start
 ```
 npm run site
 ```
-
-### 上传文档
-
-添加文件，提交代码至 `master` 分支，查看流水线 [OE](http://eng.xiaojukeji.com/group/38581/service/23470/pipeline)，并触发 `Odin` 部署。

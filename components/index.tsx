@@ -4,8 +4,6 @@ export { default as BasicTable } from './basic-table';
 export { default as DataTable } from './data-table';
 export { default as Switch } from './switch';
 export { default as Code } from './code';
-export { default as NsTree } from './ns-tree';
-export { default as NsTreeSelect } from './ns-tree-select';
 export { default as VirtualSelect } from './virtual-select';
 
 // forms

@@ -56,7 +56,7 @@ function Switch(props: ISwitchProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.checked]);
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { disabled, onChange, onClick } = props;
     if (disabled) {
       return;

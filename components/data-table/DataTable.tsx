@@ -196,7 +196,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
   const columnsMap = useMemo(() => {
     const result = {} as any;
     if (props.columns && props.columns.length > 0) {
-      props.columns.forEach(columnItem => {
+      props.columns.forEach((columnItem) => {
         if (columnItem.dataIndex) {
           result[columnItem.dataIndex as string] = {
             ...columnItem,
@@ -352,7 +352,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
       fetchParams[pageParams.curPageName] -= 1;
     }
 
-    props.columns.forEach(columnItem => {
+    props.columns.forEach((columnItem) => {
       if (columnItem.dataIndex && params[columnItem.dataIndex]) {
         fetchParams[columnItem.dataIndex] = params[columnItem.dataIndex];
       }
@@ -396,7 +396,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
     });
     res
       .json()
-      .then(res => {
+      .then((res) => {
         let callbackData = res;
         if (props.apiCallback) {
           callbackData = props.apiCallback(res);
@@ -554,7 +554,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
     checkRightHeader(null, {});
   };
 
-  const handleQueryFormChange = data => {
+  const handleQueryFormChange = (data) => {
     setPagination({
       ...paginationState,
       current: 1,
@@ -562,7 +562,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
     setQueryFormValues(data);
   };
 
-  const handleQueryFormReset = data => {
+  const handleQueryFormReset = (data) => {
     setPagination({
       ...paginationState,
       current: 1,
@@ -570,7 +570,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
     setQueryFormValues(data);
   };
 
-  const handleQuerySearch = data => {
+  const handleQuerySearch = (data) => {
     setPagination({
       ...paginationState,
       current: 1,
@@ -638,7 +638,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
     fetchData(fetchParams);
   };
 
-  const handleSearchChange = e => {
+  const handleSearchChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
     // 使用组件默认的search回调
@@ -680,7 +680,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
   });
 
   const renderColumns = () => {
-    return props.columns.map(columnItem => {
+    return props.columns.map((columnItem) => {
       const currentItem = _.cloneDeep(columnItem);
 
       // filter
@@ -720,12 +720,12 @@ function DataTable<T>(props: IDataTableProps<T>) {
               <Input
                 data-testid="filter-search-input"
                 autoFocus={true}
-                ref={node => {
+                ref={(node) => {
                   filterSearchInputRef.current = node;
                 }}
                 placeholder={t('table.filter.search.placeholder')}
                 value={selectedKeys && selectedKeys[0]}
-                onChange={e => {
+                onChange={(e) => {
                   if (setSelectedKeys) {
                     return setSelectedKeys(e.target.value ? [e.target.value] : []);
                   }
@@ -809,7 +809,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
     });
   };
 
-  const renderRightHeader = params => {
+  const renderRightHeader = (params) => {
     if (!showFilter) {
       return null;
     }
@@ -826,7 +826,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
           </b>
         </div>
         {(isSearch || isFilter) &&
-          Object.values(columnsState as IColumnsReducerState).map(columnValue => {
+          Object.values(columnsState as IColumnsReducerState).map((columnValue) => {
             if (columnValue.type === 'search' && columnValue.value) {
               return (
                 <div
@@ -873,7 +873,7 @@ function DataTable<T>(props: IDataTableProps<T>) {
                   [cur.value]: [cur.text],
                 };
               }, {});
-              const newValues = columnValue.value.map(valItem => {
+              const newValues = columnValue.value.map((valItem) => {
                 return mapping && mapping[valItem] ? mapping[valItem] : valItem;
               });
               return (

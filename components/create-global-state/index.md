@@ -28,7 +28,7 @@ setState(prevState => {
 ### Demo
 
 ```jsx
-import { createGlobalState } from '@didi/dantd';
+import { createGlobalState } from 'dantd';
 
 const useGlobalValue = createGlobalState<number>(0);
 

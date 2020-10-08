@@ -59,7 +59,7 @@ function getColSpan(cols, index, spans) {
   return 3;
 }
 
-const BasicFormItems: React.FC<IBasicFormItemsProps> = props => {
+const BasicFormItems: React.FC<IBasicFormItemsProps> = (props) => {
   const prefixCls = `${props.prefixCls || 'dantd'}-basic-form-items`;
   const { t } = useIntl();
   const renderTimes = useRef(-1);
@@ -162,9 +162,9 @@ const BasicFormItems: React.FC<IBasicFormItemsProps> = props => {
         .filter((selEle, selIdx) => {
           return selIdx !== getKey(index);
         })
-        .map(selEle => selEle[colIndex]);
+        .map((selEle) => selEle[colIndex]);
       tmpSelectOptions = selectOptions.filter(
-        optionEle => selectedVals.indexOf(optionEle.value) < 0,
+        (optionEle) => selectedVals.indexOf(optionEle.value) < 0,
       );
     }
 

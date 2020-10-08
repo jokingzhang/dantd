@@ -13,14 +13,14 @@ const columns = [
     dataIndex: 'name',
     key: 'name',
     commonFilter: true,
-    render: text => <a href="test">{text}</a>,
+    render: (text) => <a href="test">{text}</a>,
   },
   {
     title: 'Age',
     dataIndex: 'age',
     commonSorter: true,
     key: 'age',
-    render: text => <span data-testid="column-age">{text}</span>,
+    render: (text) => <span data-testid="column-age">{text}</span>,
   },
   {
     title: 'Address',
@@ -42,9 +42,9 @@ const columns = [
     title: 'Tags',
     key: 'tags',
     dataIndex: 'tags',
-    render: tags => (
+    render: (tags) => (
       <span>
-        {tags.map(tag => {
+        {tags.map((tag) => {
           let color = tag.length > 5 ? 'geekblue' : 'green';
           if (tag === 'loser') {
             color = 'volcano';

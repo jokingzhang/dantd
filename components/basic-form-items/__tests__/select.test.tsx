@@ -8,7 +8,7 @@ import { processBasicFormItemsData } from '../../utils';
 describe('Basic Forms Testing Select', () => {
   afterEach(cleanup);
   it('输入，提交校验', async () => {
-    const Demo = props => {
+    const Demo = (props) => {
       const { form } = props;
       const dataSource = [
         ['显示器', '6'],

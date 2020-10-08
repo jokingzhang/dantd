@@ -28,17 +28,8 @@ export default
       'prop-types': Object.keys(propTypes),
     },
     doc: {
-      title: '滴滴运维产品UI组件库',
-      themeConfig: {
-        logo: {
-          src: 'http://git.xiaojukeji.com/ops-fe/dantd/uploads/2c3d4120c0815dd1b00107a73b2371e0/WX20200209-194701.png',
-          width: 270,
-        },
-        colors: {
-          primary: '#fa8c16',
-          link: '#fa8c16',
-        }
-      },
+      title: 'Dantd基础UI组件库',
+      base: '/dantd/',
       menu: [
         '首页',
         '更新日志',

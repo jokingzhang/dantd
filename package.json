@@ -37,7 +37,8 @@
     "start": "cross-env NODE_ENV=development bisheng start -c ./site/bisheng.config.js",
     "test": "jest --coverage --no-cache",
     "tsc": "tsc",
-    "site": "rm -rf _site && cross-env NODE_ENV=production bisheng build -c ./site/bisheng.config.js && node ./scripts/copyStatic.js",
+    "doc:deploy": "father doc deploy",
+    "site": "rm -rf _site && cross-env NODE_ENV=production bisheng build -c ./site/bisheng.config.js && node ./scripts/copyStatic.js && mv _site build",
     "build": "rm -rf dist/ es/ lib/ && node ./scripts/renameStart.js && father build && node ./scripts/moveDeclare.js && node ./scripts/renameEnd.js && node ./scripts/optimizeDist.js",
     "buildTest": "rm -rf dist/ es/ lib/ && node ./scripts/renameStart.js && father build && node ./scripts/moveDeclare.js"
   },

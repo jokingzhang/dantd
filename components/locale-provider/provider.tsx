@@ -10,7 +10,7 @@ interface IIntlProps {
 const IntlProvider = (props: IIntlProps) => {
   const locale = props.locale || 'en-US';
   const i18n = {
-    t: key => TRANSLATIONS[locale][key],
+    t: (key) => TRANSLATIONS[locale][key],
   };
 
   return <IntlContext.Provider value={i18n}>{props.children}</IntlContext.Provider>;

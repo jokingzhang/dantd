@@ -1,8 +1,6 @@
 # dantd
 
-[规划](http://wiki.intra.xiaojukeji.com/pages/viewpage.action?pageId=326757479)
-
-[预览地址](http://dantd.intra.xiaojukeji.com/)
+[预览地址](https://jokingzhang.github.io/dantd)
 
 一个基于 [Antd-v3](https://github.com/ant-design/ant-design/) 所封装的业务组件库
 
@@ -14,7 +12,6 @@
 - 支持 eslint & prettier
 - 支持 react-app-rewired
 - 基于 [umijs/father](https://github.com/umijs/father) 完成打包，可使用 cjs、esm 和 umd 三种格式的引用
-- 支持 mdx 文档
 
 # Installation
 
@@ -85,7 +82,7 @@ $ npm run build
 
 在 `src` 目录下，新增一个组件的目录，类似上面的 `empty-line` 组件。目录名需要保持**小写**。如果是自定义组件，需要取一个 `antd` 中所不包含的组件名称。添加完文件之后，在 `entry/config.tsx` 中增加 `demo` 的配置。此时应该可以看到组件，并继续开发了。
 
-更多请参考：[手摸手，打造属于自己的 React 组件库 —— 基础篇](http://way.xiaojukeji.com/article/20141)
+更多请参考：[手摸手，打造属于自己的 React 组件库 —— 基础篇](https://juejin.im/post/6844904054347268103)
 
 ### 测试
 
@@ -94,24 +91,16 @@ $ npm run build
 - [Jest](https://jestjs.io/)：JavaScript 测试框架。
 - [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro)：将 React 组件转化成 Dom 节点来测试，而不是渲染的 React 组件的实例，可以当做是 [Enzyme](http://airbnb.io/enzyme/) 的替代。编写测试脚本，并保证希望测试到的地方已经覆盖。
 
-更多请参考：[手摸手，打造属于自己的 React 组件库 —— 测试篇](http://way.xiaojukeji.com/article/20144)
+更多请参考：[手摸手，打造属于自己的 React 组件库 —— 测试篇](https://juejin.im/post/6844904054351462408)
 
 ### 发布
 
-如果没有安装过 `dnpm`，需要先安装一下：
-
-```
-$ npm install -g dnpm --registry=http://registry.npm.xiaojukeji.com
-```
-
-登录 `dnpm` 账号，提交所有代码
-
 ```
 $ npm run build
-$ dnpm login
+$ npm login
 $ npm version patch
 $ git push
-$ dnpm publish
+$ npm publish
 ```
 
 > npm version
@@ -137,7 +126,3 @@ npm start
 ```
 npm run build
 ```
-
-### 上传文档
-
-添加文件，提交代码至 `master` 分支，查看流水线 [OE](http://eng.xiaojukeji.com/group/38581/service/23470/pipeline)，并触发 `Odin` 部署。

@@ -4,8 +4,8 @@ module.exports = {
   port: 8078,
   theme: './site/theme',
   themeConfig: {
-    logo: 'http://dantd.intra.xiaojukeji.com/static/logo.png',
-    sitename: '滴滴运维产品UI组件库',
+    logo: 'https://jokingzhang.github.io/dantd/static/logo.png',
+    sitename: 'Dantd基础UI组件库',
     root: '/',
     tagline: 'The one theme for bisheng',
     categoryOrder: {
@@ -37,7 +37,6 @@ module.exports = {
       反馈: 5,
       其他: 6,
       废弃: 7,
-
       // Design
       原则: 1,
       Principles: 1,
@@ -57,7 +56,7 @@ module.exports = {
   webpackConfig(config) {
     // const NODE_MODULES_PATH = path.resolve(__dirname, 'node_modules');
     config.resolve.alias = {
-      '@didi/dantd': path.join(process.cwd(), 'components'),
+      dantd: path.join(process.cwd(), 'components'),
       'react-router': 'react-router/umd/ReactRouter',
       // jquery: path.resolve(NODE_MODULES_PATH, 'jquery'),
     };

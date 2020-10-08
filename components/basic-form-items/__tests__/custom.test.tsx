@@ -8,7 +8,7 @@ import { processBasicFormItemsData } from '../../utils';
 describe('Basic Forms Testing Custom', () => {
   afterEach(cleanup);
   it('输入，提交校验', async () => {
-    const Demo = props => {
+    const Demo = (props) => {
       const { form } = props;
       const [results, setResults] = useState('');
       const customDataSource = [['张三', 23, '程序员']];

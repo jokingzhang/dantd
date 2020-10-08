@@ -6,7 +6,7 @@ title: 多选
 多选，从已有条目中选择。
 
 ```jsx
-import { VirtualSelect as Select } from '@didi/dantd';
+import { VirtualSelect as Select } from 'dantd';
 
 const { Option } = Select;
 

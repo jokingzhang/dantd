@@ -12,7 +12,7 @@ subtitle: retry请求
 
 
 ```jsx
-import { useAsyncRetry } from '@didi/dantd';
+import { useAsyncRetry } from 'dantd';
 
 // Returns a Promise that resolves after one second.
 const fn = () => new Promise((resolve, reject) => {

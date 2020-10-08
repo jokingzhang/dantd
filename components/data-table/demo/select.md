@@ -7,13 +7,13 @@ title: 选择
 
 
 ```jsx
-import { DataTable as Table, useAsync } from '@didi/dantd';
+import { DataTable as Table, useAsync } from 'dantd';
 import { Button, Tabs, DatePicker, Form } from 'antd';
 import moment from 'moment';
 
 
 
-const listUrl = 'http://10.160.122.33:8080/list?_d=123';
+const listUrl = 'https://easy-mock.com/mock/5f7e96fbf9d9bd19dca629b0/dantd/list?_d=123';
 const columns = [
   {
     title: '标题',

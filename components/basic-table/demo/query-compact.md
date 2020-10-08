@@ -7,7 +7,7 @@ title: query 紧凑模式
 
 ```jsx
 import { useState } from 'react';
-import { BasicTable, useAsyncRetry } from '@didi/dantd';
+import { BasicTable, useAsyncRetry } from 'dantd';
 import { Button, Divider, Typography } from 'antd';
 
 const columns = [
@@ -95,7 +95,7 @@ const queryFormColumns = [
 ];
 
 const fetchData = () => {
-  const listUrl = 'http://10.160.122.33:8080/list';
+  const listUrl = 'https://easy-mock.com/mock/5f7e96fbf9d9bd19dca629b0/dantd/list';
   return new Promise(async (resolve, reject) => {
     const res = await fetch(listUrl);
     res

@@ -7,7 +7,7 @@ title: 基本
 
 ```jsx
 import { useState } from 'react';
-import { QueryForm } from '@didi/dantd';
+import { QueryForm } from 'dantd';
 import { InputNumber } from 'antd';
 
 const columns = [

@@ -24,7 +24,7 @@ subtitle: 表格
 | :-- | :-- | :-- | :-- |
 | dataSource | 数据数组 | any[] | - |
 | columns | 表格列的配置描述，具体项见下表 | [ColumnProps](https://github.com/ant-design/ant-design/blob/e4c72cf6f553376dbef6746bd0a74966152494fe/components/table/interface.tsx#L32)[] | - |
-| queryFormColumns | 查询表单的配置描述，详见 `QueryForm` 组件的文档 | [QueryColumnProps](http://dantd.intra.xiaojukeji.com/components/query-form/#Columns)[] | - |
+| queryFormColumns | 查询表单的配置描述，详见 `QueryForm` 组件的文档 | [QueryColumnProps](https://jokingzhang.github.io/dantd/components/query-form/#Columns)[] | - |
 | loading | 加载数据时的状态 | boolean | false |
 | onChange | 分页、排序、筛选变化时触发 | Function(pagination, filters, sorter, extra: { currentDataSource: [] }) | - |
 | rowSelection | 表格行是否可选择，[配置项](https://3x.ant.design/components/table-cn/#rowSelection) | object | null |

@@ -7,7 +7,7 @@ title: query 模式
 
 
 ```jsx
-import { DataTable } from '@didi/dantd';
+import { DataTable } from 'dantd';
 import { Button } from 'antd';
 import moment from 'moment';
 
@@ -82,7 +82,7 @@ const queryFormColumns = [
 ];
 
 
-const listUrl = 'http://10.160.122.33:8080/list?_d=123';
+const listUrl = 'https://easy-mock.com/mock/5f7e96fbf9d9bd19dca629b0/dantd/list?_d=123';
 
 const BasicExample: React.FC = () => {
 

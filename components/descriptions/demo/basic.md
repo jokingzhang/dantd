@@ -6,7 +6,7 @@ title: 基本
 展示一个简单的描述列表，可以为其设置 `title`。
 
 ```jsx
-import { Descriptions } from '@didi/dantd';
+import { Descriptions } from 'dantd';
 import { Row, Col, Card, Typography, Badge } from 'antd';
 
 export const data1 = [

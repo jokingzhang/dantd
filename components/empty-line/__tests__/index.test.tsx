@@ -3,9 +3,13 @@ import { create, act } from 'react-test-renderer';
 import EmptyLine from '../empty-line';
 
 test('默认高度渲染正常', () => {
-  const emptyLine = create(<EmptyLine />).toJSON();
+  let emptyLine: any;
 
-  expect(emptyLine?.props.style).toEqual(
+  act(() => {
+    emptyLine = create(<EmptyLine />);
+  });
+
+  expect(emptyLine.toJSON()?.props.style).toEqual(
     expect.objectContaining({
       height: 20,
     }),

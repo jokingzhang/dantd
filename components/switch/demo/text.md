@@ -6,7 +6,7 @@ title: 文本
 使用 `checkedChildren` 和 `unCheckedChildren`，传入中英文的文案。
 
 ```jsx
-import { Switch } from '@didi/dantd';
+import { Switch } from 'dantd';
 
 ReactDOM.render(
   <div className="p-switch-wrapper">

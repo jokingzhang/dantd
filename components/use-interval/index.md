@@ -19,7 +19,7 @@ subtitle: 定时器
 可以添加 [destroyInactiveTabPane](https://github.com/ant-design/ant-design/issues/15102) 属性，当切换Tab时，自动卸载Tab里面的东西即可。
 
 ```jsx
-import { useInterval } from '@didi/dantd';
+import { useInterval } from 'dantd';
 import { Button } from 'antd';
 
 const IntervalDemo = () => {

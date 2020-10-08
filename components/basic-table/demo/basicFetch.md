@@ -7,7 +7,7 @@ title: 从API获取数据
 
 ```jsx
 import { Button, Tabs, DatePicker, Form } from 'antd';
-import { BasicTable as Table } from '@didi/dantd';
+import { BasicTable as Table } from 'dantd';
 import moment from 'moment';
 
 const columns = [
@@ -56,7 +56,7 @@ function getOnHourUnix(time) {
     .toString();
 }
 
-const listUrl = 'http://10.160.122.33:8080/list';
+const listUrl = 'https://easy-mock.com/mock/5f7e96fbf9d9bd19dca629b0/dantd/list';
 
 const BasicExample: React.FC = () => {
 

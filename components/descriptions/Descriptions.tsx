@@ -20,7 +20,7 @@ export interface IDescriptionsProps {
   dataSource: IDescriptionItem[];
 }
 
-const Descriptions: React.FC<IDescriptionsProps> = props => {
+const Descriptions: React.FC<IDescriptionsProps> = (props) => {
   const prefixCls = `${props.prefixCls || 'dantd'}-desc`;
   const {
     itemTitleStyle = {},

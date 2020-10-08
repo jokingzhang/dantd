@@ -193,7 +193,7 @@ const QueryForm = (props: IQueryFormProps) => {
 
   const collapseHideNum = getCollapseHideNum(getSpanConfig(itemColConfig || 8, windowSize));
 
-  const renderInputItem = colItem => {
+  const renderInputItem = (colItem) => {
     const {
       initialValue,
       dataIndex,
@@ -237,7 +237,7 @@ const QueryForm = (props: IQueryFormProps) => {
     );
   };
 
-  const renderSelectItem = colItem => {
+  const renderSelectItem = (colItem) => {
     const {
       initialValue,
       dataIndex,
@@ -289,7 +289,7 @@ const QueryForm = (props: IQueryFormProps) => {
             style={{ width: '100%' }}
             {...componentProps}
           >
-            {options.map(option => {
+            {options.map((option) => {
               return (
                 <Option data-testid="select-option" value={option.value}>
                   {option.title}
@@ -302,7 +302,7 @@ const QueryForm = (props: IQueryFormProps) => {
     );
   };
 
-  const renderCustomItem = colItem => {
+  const renderCustomItem = (colItem) => {
     const {
       initialValue,
       formItemLayout,
