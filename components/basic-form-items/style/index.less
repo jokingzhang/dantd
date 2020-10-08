@@ -1,0 +1,69 @@
+@import '../../style/index.less';
+@import '~antd/es/style/themes/default.less';
+
+@dantd-basic-form-items-prefix-cls: ~'@{dantd-prefix}-basic-form-items';
+
+.@{dantd-basic-form-items-prefix-cls} {
+  position: relative;
+  margin-bottom: 10px;
+
+  &-item-title {
+    &:after {
+      content: ":";
+      position: absolute;
+      margin: 0 8px 0 2px;
+      top: 8px;
+      right: -8px;
+    }
+  }
+  &-item-del-btn {
+    margin-top: 12px;
+  }
+
+  &-detail {
+    &-header {
+      display: flex;
+      border-top: 1px solid #dbe3f2;
+      border-bottom: 1px solid #dbe3f2;
+      border-left: 1px solid #dbe3f2;
+      border-right: 1px solid #dbe3f2;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      overflow: hidden;
+      word-break: break-word;
+    }
+    &-body {
+      display: flex;
+      border-bottom: 1px solid #dbe3f2;
+      border-top: none;
+      border-left: 1px solid #dbe3f2;
+      border-right: 1px solid #dbe3f2;
+      padding: 8px 10px;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      overflow: hidden;
+      word-break: break-word;
+    }
+    &-empty {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #dbe3f2;
+      border-top: none;
+      border-left: 1px solid #dbe3f2;
+      border-right: 1px solid #dbe3f2;
+      padding: 8px 10px;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    &-content {
+      overflow: hidden;
+      word-break: break-word;
+    }
+  }
+  &-error-msg {
+    color: @error-color;
+  }
+}

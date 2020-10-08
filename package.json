@@ -1,0 +1,160 @@
+{
+  "name": "dantd",
+  "version": "0.3.25",
+  "description": "react components by antdv3",
+  "author": "jokingzhang <496691544@qq.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "keywords": [
+    "ant-design",
+    "component",
+    "components",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jokingzhang/dantd.git"
+  },
+  "bugs": {
+    "url": "git@github.com:jokingzhang/dantd.git/issues"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development bisheng start -c ./site/bisheng.config.js",
+    "test": "jest --coverage --no-cache",
+    "tsc": "tsc",
+    "site": "rm -rf _site && cross-env NODE_ENV=production bisheng build -c ./site/bisheng.config.js && node ./scripts/copyStatic.js",
+    "build": "rm -rf dist/ es/ lib/ && node ./scripts/renameStart.js && father build && node ./scripts/moveDeclare.js && node ./scripts/renameEnd.js && node ./scripts/optimizeDist.js",
+    "buildTest": "rm -rf dist/ es/ lib/ && node ./scripts/renameStart.js && father build && node ./scripts/moveDeclare.js"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "antd": ">=3.26.18",
+    "jquery": ">=3.0.0"
+  },
+  "dependencies": {
+    "antd": "^3.26.18",
+    "classnames": "^2.2.6",
+    "fast-deep-equal": "^3.1.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "omit.js": "^1.0.2",
+    "codemirror": "^5.56.0",
+    "react-syntax-highlighter": "13.4.0",
+    "react-codemirror2": "7.2.1",
+    "rc-select": "^11.0.11"
+  },
+  "devDependencies": {
+    "@react-mock/fetch": "^0.3.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^24.9.1",
+    "@types/lodash": "^4.14.132",
+    "@types/node": "^12.12.25",
+    "@types/codemirror": "^0.0.97",
+    "@types/react-syntax-highlighter": "^11.0.4",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-highlight-words": "^0.16.0",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-react-displayname": "^0.0.5",
+    "babel-plugin-import": "^1.13.0",
+    "bisheng": "^1.4.6",
+    "bisheng-plugin-antd": "^1.0.0",
+    "bisheng-plugin-description": "^0.1.4",
+    "bisheng-plugin-react": "^1.0.0",
+    "bisheng-plugin-toc": "^0.4.4",
+    "cross-env": "^7.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "eslint-plugin-testing-library": "^2.2.3",
+    "father": "^2.29.2",
+    "husky": "^3.0.9",
+    "intersection-observer": "^0.7.0",
+    "jest": "24.9.0",
+    "jest-html-reporters": "^1.2.1",
+    "jsonml.js": "^0.1.0",
+    "klaw-sync": "^6.0.0",
+    "less": "^2.7.2",
+    "lint-staged": "^9.5.0",
+    "lz-string": "^1.4.4",
+    "node-fetch": "^2.6.0",
+    "react": "^16.9.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.9.0",
+    "react-helmet-async": "^1.0.4",
+    "react-highlight-words": "^0.16.0",
+    "react-intl": "^2.8.0",
+    "react-is": "^16.13.1",
+    "react-router-dom": "^5.0.1",
+    "react-test-renderer": "^16.12.0",
+    "reqwest": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "scrollama": "^2.0.0",
+    "ts-jest": "24.1.0",
+    "typescript": "3.7.5",
+    "shelljs": "^0.8.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && tsc"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix components/**/*.{ts,tsx}",
+      "jest --config jest.config.js --no-cache --passWithNoTests",
+      "git add ."
+    ]
+  },
+  "sideEffects": [
+    "dist/*",
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ]
+}

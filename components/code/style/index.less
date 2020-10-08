@@ -1,0 +1,62 @@
+@import '../../style/index.less';
+@import '~antd/es/style/themes/default.less';
+@dantd-switch-prefix-cls: ~'@{dantd-prefix}-code';
+
+.@{dantd-switch-prefix-cls} {
+  position: relative;
+  &-editor-wrapper {
+    height: 100px;
+  }
+
+  &-editor {
+    position: relative;
+    height: 100%;
+    .CodeMirror {
+      height: 100%;
+    }
+    .CodeMirror-scroll  {
+      padding: 10px;
+    }
+    .CodeMirror pre.CodeMirror-line {
+      padding: 0;
+    }
+    &-light {
+      .cm-s-neo.CodeMirror {
+        background: rgb(245, 247, 255);
+      }
+      .CodeMirror {
+        background: rgb(245, 247, 255);
+      }
+    }
+    &-dark {
+      .cm-s-mbo .CodeMirror-gutters {
+        left: 0 !important;
+      }
+    }
+  }
+
+  &-text {
+    pre > code {
+      padding: 5px 0px !important;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    pre > code > code {
+      padding: 0 12px 0 5px !important;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    &-light {
+      pre code {
+        background: rgb(245, 247, 255) !important;
+      }
+    }
+    &-dark {
+      pre code {
+        background: rgb(29, 31, 33) !important;
+        color: rgb(197, 200, 198);
+      }
+    }
+  }
+
+}

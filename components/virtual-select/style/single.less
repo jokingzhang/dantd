@@ -1,0 +1,180 @@
+@import './index';
+
+@selection-item-padding: ceil(@font-size-base * 1.25);
+
+.@{dantd-virtual-select-prefix-cls}-single {
+  // ========================= Selector =========================
+  .@{dantd-virtual-select-prefix-cls}-selector {
+    display: flex;
+
+    .@{dantd-virtual-select-prefix-cls}-selection-search {
+      position: absolute;
+      top: 0;
+      right: @input-padding-horizontal-base;
+      bottom: 0;
+      left: @input-padding-horizontal-base;
+
+      &-input {
+        width: 100%;
+      }
+    }
+
+    .@{dantd-virtual-select-prefix-cls}-selection-item,
+    .@{dantd-virtual-select-prefix-cls}-selection-placeholder {
+      padding: 0;
+      line-height: @select-height-without-border;
+      transition: all 0.3s;
+
+      // Firefox inline-block position calculation is not same as Chrome & Safari. Patch this:
+      @supports (-moz-appearance: meterbar) {
+        & {
+          line-height: @select-height-without-border;
+        }
+      }
+    }
+
+    .@{dantd-virtual-select-prefix-cls}-selection-item {
+      position: relative;
+      user-select: none;
+    }
+
+    .@{dantd-virtual-select-prefix-cls}-selection-placeholder {
+      pointer-events: none;
+    }
+
+    // For common baseline align
+    &::after,
+    // For '' value baseline align
+    .@{dantd-virtual-select-prefix-cls}-selection-item::after,
+    // For undefined value baseline align
+    .@{dantd-virtual-select-prefix-cls}-selection-placeholder::after {
+      display: inline-block;
+      width: 0;
+      visibility: hidden;
+      content: '\a0';
+    }
+  }
+
+  // With arrow should provides `padding-right` to show the arrow
+  &.@{dantd-virtual-select-prefix-cls}-show-arrow .@{dantd-virtual-select-prefix-cls}-selection-search {
+    right: @input-padding-horizontal-base + @font-size-base;
+  }
+
+  &.@{dantd-virtual-select-prefix-cls}-show-arrow .@{dantd-virtual-select-prefix-cls}-selection-item,
+  &.@{dantd-virtual-select-prefix-cls}-show-arrow .@{dantd-virtual-select-prefix-cls}-selection-placeholder {
+    padding-right: @selection-item-padding;
+  }
+
+  // Opacity selection if open
+  &.@{dantd-virtual-select-prefix-cls}-open .@{dantd-virtual-select-prefix-cls}-selection-item {
+    opacity: 0.4;
+  }
+
+  // ========================== Input ==========================
+  // We only change the style of non-customize input which is only support by `combobox` mode.
+
+  // Not customize
+  &:not(.@{dantd-virtual-select-prefix-cls}-customize-input) {
+    .@{dantd-virtual-select-prefix-cls}-selector {
+      .select-selector();
+      .select-search-input-without-border();
+      width: 100%;
+
+      height: @input-height-base;
+      padding: 0 @input-padding-horizontal-base;
+
+      .@{dantd-virtual-select-prefix-cls}-selection-search-input {
+        height: @select-height-without-border;
+      }
+
+      &::after {
+        line-height: @select-height-without-border;
+      }
+    }
+  }
+
+  &.@{dantd-virtual-select-prefix-cls}-customize-input {
+    .@{dantd-virtual-select-prefix-cls}-selector {
+      &::after {
+        display: none;
+      }
+
+      .@{dantd-virtual-select-prefix-cls}-selection-search {
+        position: static;
+        width: 100%;
+      }
+
+      .@{dantd-virtual-select-prefix-cls}-selection-placeholder {
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding: 0 @input-padding-horizontal-base;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // ============================================================
+  // ==                          Size                          ==
+  // ============================================================
+  .select-size(@suffix, @input-height) {
+    @merged-cls: ~'@{dantd-virtual-select-prefix-cls}-@{suffix}';
+
+    &.@{merged-cls}:not(.@{dantd-virtual-select-prefix-cls}-customize-input) {
+      .@{dantd-virtual-select-prefix-cls}-selector {
+        height: @input-height;
+
+        &::after,
+        .@{dantd-virtual-select-prefix-cls}-selection-item,
+        .@{dantd-virtual-select-prefix-cls}-selection-placeholder {
+          line-height: @input-height - 2 * @border-width-base;
+        }
+      }
+
+      // Not customize
+      &:not(.@{dantd-virtual-select-prefix-cls}-customize-input) {
+        .@{dantd-virtual-select-prefix-cls}-selection-search-input {
+          height: @input-height - 2 * @border-width-base;
+        }
+      }
+    }
+  }
+
+  .select-size('lg', @select-single-item-height-lg);
+  .select-size('sm', @input-height-sm);
+
+  // Size small need additional set padding
+  &.@{dantd-virtual-select-prefix-cls}-sm {
+    &:not(.@{dantd-virtual-select-prefix-cls}-customize-input) {
+      .@{dantd-virtual-select-prefix-cls}-selection-search {
+        right: @input-padding-horizontal-sm;
+        left: @input-padding-horizontal-sm;
+      }
+
+      .@{dantd-virtual-select-prefix-cls}-selector {
+        padding: 0 @input-padding-horizontal-sm;
+      }
+
+      // With arrow should provides `padding-right` to show the arrow
+      &.@{dantd-virtual-select-prefix-cls}-show-arrow .@{dantd-virtual-select-prefix-cls}-selection-search {
+        right: @input-padding-horizontal-sm + @font-size-base * 1.5;
+      }
+
+      &.@{dantd-virtual-select-prefix-cls}-show-arrow .@{dantd-virtual-select-prefix-cls}-selection-item,
+      &.@{dantd-virtual-select-prefix-cls}-show-arrow .@{dantd-virtual-select-prefix-cls}-selection-placeholder {
+        padding-right: @font-size-base * 1.5;
+      }
+    }
+  }
+
+  &.@{dantd-virtual-select-prefix-cls}-lg {
+    &:not(.@{dantd-virtual-select-prefix-cls}-customize-input) {
+      .@{dantd-virtual-select-prefix-cls}-selector {
+        padding: 0 @input-padding-horizontal-lg;
+      }
+    }
+  }
+}

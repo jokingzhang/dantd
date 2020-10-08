@@ -1,0 +1,143 @@
+@import '../../style/index.less';
+@import '~antd/es/style/themes/default.less';
+@dantd-switch-prefix-cls: ~'@{dantd-prefix}-switch';
+@dantd-switch-height: 28px;
+@dantd-switch-width: 68px;
+@dantd-switch-line-height: 11.5px;
+@dantd-switch-font-size: 30px;
+// small
+@dantd-switch-small-height: 12px;
+@dantd-switch-small-width: 20px;
+@dantd-switch-small-line-height: 6.5px;
+@dantd-switch-small-font-size: 25px;
+
+.@{dantd-switch-prefix-cls} {
+  position: relative;
+  display: inline-grid;
+  .clearfix;
+  .reset-space-border;
+
+  &-right-content {
+    position: absolute;
+    z-index: 5;
+    text-transform: uppercase;
+    text-align: center;
+    background: white;
+    color: @primary-7;
+    transform: translate3d(0, 0, 0);
+    top: 1px;
+    left: 1px;
+    border-radius: 20px;
+    width: 33px;
+    line-height: 26px;
+    font-size: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &-left-content {
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    text-align: center;
+    left: 32px;
+    font-size: 10px;
+    line-height: 28px;
+    width: 33px;
+    color: #fff;
+    padding: 0 12px;
+  }
+
+  &-default {
+    input[type="checkbox"] {
+      .hide-fake;
+  
+      & + label {
+        position: relative;
+        user-select: none;
+        display: inline-table;
+        width: @dantd-switch-width;
+        height: @dantd-switch-height;
+        border-radius: 20px;
+        background: @primary-7;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
+  
+      &:checked + label {
+        .@{dantd-switch-prefix-cls}-right-content {
+          transform: translate3d(33px, 0, 0);
+        }
+        .@{dantd-switch-prefix-cls}-left-content {
+          transform: translate3d(-31px, 0, 0);
+        }
+      }
+    }
+  }
+
+  &-small {
+    input[type="checkbox"] {
+      .hide-fake;
+  
+      & + label {
+        user-select: none;
+        line-height: @dantd-switch-small-height;
+             
+        &:before {
+          content: '•';
+          width: @dantd-switch-small-width;
+          height: @dantd-switch-small-height;
+          display: inline-block;
+          transition: all 0.5s ease-in-out;
+          text-align: left;
+          font-size: @dantd-switch-small-font-size;
+          line-height: @dantd-switch-small-line-height;
+          overflow: hidden;
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 20px;
+          margin: auto 0;
+          background: @primary-7;
+          cursor: pointer;
+        }
+      }
+  
+      &:checked + label {
+        &:before {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  &-disabled {
+    input[type="checkbox"] {
+      & + label {
+        cursor: no-drop;
+        &:before {
+          background: #ccc;
+          cursor: no-drop;
+        }
+      }
+    }
+
+    &.@{dantd-switch-prefix-cls}-default {
+      input[type="checkbox"] {
+        & + label {
+          cursor: no-drop;
+          background: #ccc;
+          &:before {
+            background: #ccc;
+            cursor: no-drop;
+          }
+        }
+      }
+    }
+    .@{dantd-switch-prefix-cls}-right-content {
+      cursor: no-drop;
+      color: #ccc;
+    }
+    .@{dantd-switch-prefix-cls}-left-content {
+      cursor: no-drop;
+    }
+  }
+}
