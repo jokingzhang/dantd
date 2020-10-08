@@ -2,7 +2,7 @@
   "name": "dantd",
   "version": "0.3.25",
   "description": "react components by antdv3",
-  "author": "jokingzhang <496691544@qq.com>",
+  "author": "zhangbx <zhangbx@didiglobal.com>",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
