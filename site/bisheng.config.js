@@ -3,10 +3,10 @@ var path = require('path');
 module.exports = {
   port: 8078,
   theme: './site/theme',
+  root: '/dantd/',
   themeConfig: {
     logo: 'https://jokingzhang.github.io/dantd/static/logo.png',
     sitename: 'Dantd基础UI组件库',
-    root: '/',
     tagline: 'The one theme for bisheng',
     categoryOrder: {
       'Ant Design': 0,
@@ -65,7 +65,6 @@ module.exports = {
       maxEntrypointSize: 512000,
       maxAssetSize: 512000,
     };
-    config.output.publicPath = '/dantd/';
     return config;
   },
 };
