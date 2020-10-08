@@ -65,6 +65,7 @@ module.exports = {
       maxEntrypointSize: 512000,
       maxAssetSize: 512000,
     };
+    config.output.publicPath = '/dantd/';
     return config;
   },
 };
