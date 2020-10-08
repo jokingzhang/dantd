@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:jokingzhang/dantd.git"
+    "url": "git@github.com:The-Code-D/dantd.git"
   },
   "bugs": {
-    "url": "git@github.com:jokingzhang/dantd.git/issues"
+    "url": "git@github.com:The-Code-D/dantd.git/issues"
   },
   "engines": {
     "node": ">=8",
