@@ -56,7 +56,7 @@ module.exports = {
   webpackConfig(config) {
     // const NODE_MODULES_PATH = path.resolve(__dirname, 'node_modules');
     config.resolve.alias = {
-      dantd: path.join(process.cwd(), 'components'),
+      dantdv3: path.join(process.cwd(), 'components'),
       'react-router': 'react-router/umd/ReactRouter',
       // jquery: path.resolve(NODE_MODULES_PATH, 'jquery'),
     };
