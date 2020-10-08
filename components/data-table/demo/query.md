@@ -7,7 +7,7 @@ title: query 模式
 
 
 ```jsx
-import { DataTable } from 'dantd';
+import { DataTable } from 'dantdv3';
 import { Button } from 'antd';
 import moment from 'moment';
 

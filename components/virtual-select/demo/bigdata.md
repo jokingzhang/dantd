@@ -6,7 +6,7 @@ title: 大数据
 大数据，虚拟滚动。
 
 ```jsx
-import { VirtualSelect as Select } from 'dantd';
+import { VirtualSelect as Select } from 'dantdv3';
 
 const { Option } = Select;
 

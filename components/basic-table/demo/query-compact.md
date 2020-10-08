@@ -7,7 +7,7 @@ title: query 紧凑模式
 
 ```jsx
 import { useState } from 'react';
-import { BasicTable, useAsyncRetry } from 'dantd';
+import { BasicTable, useAsyncRetry } from 'dantdv3';
 import { Button, Divider, Typography } from 'antd';
 
 const columns = [

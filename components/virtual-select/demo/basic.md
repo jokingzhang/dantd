@@ -6,7 +6,7 @@ title: 基本
 基本使用。
 
 ```jsx
-import { VirtualSelect as Select } from 'dantd';
+import { VirtualSelect as Select } from 'dantdv3';
 
 const { Option } = Select;
 

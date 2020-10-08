@@ -6,7 +6,7 @@ title: 设置小标题
 `dataSource` 中，除了可以使用 `title + content`，还可以使用 `mainTitle` 设置小标题。
 
 ```jsx
-import { Descriptions } from 'dantd';
+import { Descriptions } from 'dantdv3';
 import { Row, Col, Card, Typography, Badge } from 'antd';
 const { Paragraph } = Typography;
 export const data1 = [

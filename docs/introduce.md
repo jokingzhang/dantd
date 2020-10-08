@@ -14,13 +14,13 @@ title: Dantd of React
 ## 安装
 
 ```
-$ npm install dantd
+$ npm install dantdv3
 ```
 
 ## 示例
 
 ```jsx
-import { EmptyLine } from 'dantd';
+import { EmptyLine } from 'dantdv3';
 
 ReactDOM.render(<EmptyLine />, mountNode);
 ```

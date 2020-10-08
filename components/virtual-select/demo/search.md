@@ -6,7 +6,7 @@ title: 带搜索框
 展开后可对选项进行搜索。
 
 ```jsx
-import { VirtualSelect as Select } from 'dantd';
+import { VirtualSelect as Select } from 'dantdv3';
 
 const { Option } = Select;
 

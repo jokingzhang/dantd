@@ -6,7 +6,7 @@ title: 常用表头
 表头包含左侧的标题区，和右侧的筛选区。
 
 ```jsx
-import { BasicTable as Table } from 'dantd';
+import { BasicTable as Table } from 'dantdv3';
 import { Tag, Divider, Typography } from 'antd';
 const { Paragraph } = Typography;
 

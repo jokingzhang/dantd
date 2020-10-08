@@ -7,7 +7,7 @@ title: 基本
 
 
 ```jsx
-import { DataTable as Table } from 'dantd';
+import { DataTable as Table } from 'dantdv3';
 import { Button, Tabs, DatePicker, Form } from 'antd';
 import moment from 'moment';
 

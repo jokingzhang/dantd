@@ -8,7 +8,7 @@ title: 基本
 ```jsx
 import React, { useState } from 'react';
 import { Form, Button, Input, Icon } from 'antd';
-import { useDynamicList } from 'dantd';
+import { useDynamicList } from 'dantdv3';
 
 const Demo = props => {
   const { list, remove, getKey, push } = useDynamicList(['David', 'Jack']);

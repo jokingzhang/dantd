@@ -7,7 +7,7 @@ title: 切换状态
 
 ```jsx
 import { useState } from 'react';
-import { EmptyLine, Code, QueryForm } from 'dantd';
+import { EmptyLine, Code, QueryForm } from 'dantdv3';
 const codeStr = 'const twoSum = function(nums, target) {\n    const newNumsMap = new Map(nums.map((item, idx) => [item, idx]));\n\n    let result = [];\n    nums.forEach((numItem, numIndex) => {\n        const subItem = target - numItem;\n        if (newNumsMap.has(subItem) \&\& numIndex !== newNumsMap.get(subItem)) {\n            result = [newNumsMap.get(subItem), numIndex];\n        }\n    })\n    return result;\n};\n\nconst nums = [2, 7, 11, 15];\nconst target = 9;\n\nconsole.info(twoSum(nums, target));';
 
 const columns = [

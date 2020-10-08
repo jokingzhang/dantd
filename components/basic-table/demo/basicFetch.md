@@ -7,7 +7,7 @@ title: 从API获取数据
 
 ```jsx
 import { Button, Tabs, DatePicker, Form } from 'antd';
-import { BasicTable as Table } from 'dantd';
+import { BasicTable as Table } from 'dantdv3';
 import moment from 'moment';
 
 const columns = [

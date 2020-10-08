@@ -6,7 +6,7 @@ title: 列表
 以列表的方式使用组件，并增加边框
 
 ```jsx
-import { Descriptions } from 'dantd';
+import { Descriptions } from 'dantdv3';
 import { Row, Col, Card, Typography, Badge } from 'antd';
 const { Paragraph } = Typography;
 export const data = [

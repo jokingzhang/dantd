@@ -6,7 +6,7 @@ title: 基本
 只传递 `columns` 和 `dataSource` 这两个必要属性。会展示默认的分页信息，以及通用的 「排序、搜索、过滤」等功能。这个例子中，也包含了 `searchRender` 的使用，可以自定义 `render` 方法，也可以高亮输入的部分。
 
 ```jsx
-import { BasicTable as Table } from 'dantd';
+import { BasicTable as Table } from 'dantdv3';
 import { Tag, Divider, Typography } from 'antd';
 const { Paragraph } = Typography;
 

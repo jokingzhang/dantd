@@ -12,7 +12,7 @@ subtitle: 请求
 
 
 ```jsx
-import { useAsyncFn } from 'dantd';
+import { useAsyncFn } from 'dantdv3';
 
 const fn = () => new Promise((resolve) => {
   setTimeout(() => {

@@ -12,7 +12,7 @@ subtitle: 函数请求
 
 
 ```jsx
-import { useAsyncFn } from 'dantd';
+import { useAsyncFn } from 'dantdv3';
 
 const Demo = (url) => {
   const [state, fetch] = useAsyncFn(async () => {
